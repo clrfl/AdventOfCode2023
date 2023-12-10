@@ -101,9 +101,9 @@ right = True if file[line_id][char_id + 1] in ["-", "7", "J"] else False
 seen = {(line_id, char_id)}
 
 if above:
-    pos = (line_id - 1, char_id, "below", 1)
+    pos = (line_id - 1, char_id, "bottom", 1)
 elif below:
-    pos = (line_id + 1, char_id, "above", 1)
+    pos = (line_id + 1, char_id, "top", 1)
 elif left:
     pos = (line_id, char_id - 1, "right", 1)
 elif right:
