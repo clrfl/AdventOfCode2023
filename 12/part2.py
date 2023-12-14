@@ -35,7 +35,7 @@ def matches(text, numbers):
     return states_dict.get(len(states) - 1, 0) + states_dict.get(len(states) - 2, 0)
 
 
-for idx, line in enumerate(f.readlines()):
+for line in f.readlines():
     line = line.strip().split(" ")
     text = (5*(line[0]+"?"))[:-1]
     numbers = 5*line[1].split(",")
